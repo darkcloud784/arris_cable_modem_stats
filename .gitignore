@@ -148,5 +148,10 @@ cython_debug/
 # Jetbrains
 .idea/
 
+# VS
+*.sln
+.vs
+
+
 # Non "src" ini
 *.ini
