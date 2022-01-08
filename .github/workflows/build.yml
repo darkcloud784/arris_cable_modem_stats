@@ -38,11 +38,11 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           tags: ${{ steps.docker_meta.outputs.tags }}
-          file: ./dockerfile
+          file: ./Dockerfile
 
       - name: Push image
         uses: docker/build-push-action@v2
         with:
           push: true
           tags: ${{ steps.docker_meta.outputs.tags }}
-          file: ./dockerfile
+          file: ./Dockerfile
